@@ -1,2 +1,2 @@
 # fiken-api
-Class to work with Fiken's API
+PHP Class for integrating with the Fiken API
