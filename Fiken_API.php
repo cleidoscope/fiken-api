@@ -5,8 +5,8 @@ error_reporting(E_ALL);
 
 class Fiken_Invoice
 {
-	protected $username = "cleidoscope@gmail.com";
-	protected $password = "moonfang";
+	protected $username = "XXXX";
+	protected $password = "XXX";
 	protected $headers = [];
 
 	public function __construct()
@@ -20,7 +20,7 @@ class Fiken_Invoice
 		$customer = $this->customer();
 		$field_string = json_encode($fields, true);
 
-		$ch = curl_init("https://fiken.no/api/v1/companies/fiken-demo-nordisk-og-tidlig-rytme-enk/create-invoice-service"); 
+		$ch = curl_init("https://fiken.no/api/v1/companies/XXXXX/create-invoice-service"); 
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $field_string);
